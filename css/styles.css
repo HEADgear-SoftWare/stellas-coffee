@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: stellas-coffee-font;
+  src: url("../assets/fonts/stellas-fonts/christie.ttf"); }
+
+body {
+  overflow: hidden; }
+
+h1 {
+  font-size: 4em;
+  font-family: Oswald;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 30px; }
+
+h2 {
+  font-size: 3em;
+  font-family: Oswald;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: blue; }
+
+h3 {
+  font-size: 2em;
+  font-family: Oswald;
+  margin-left: 20px;
+  margin-bottom: 10px; }
+
+p {
+  font-family: Roboto;
+  margin-left: 20px;
+  margin-bottom: 5px; }
+
+a {
+  text-decoration: none; }
+  a:link, a:active, a:hover, a:visited {
+    text-decoration: none; }
+
+.link {
+  transition: color 0.5s ease;
+  color: #832209; }
+  .link:hover {
+    transition: color 0.5s ease;
+    color: #77482e;
+    cursor: pointer; }
+
+.center {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around; }
+  .center video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100; }
+
+.info {
+  height: 180px;
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 35%;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  border-radius: 20px;
+  color: #ddd3a0;
+  opacity: .9;
+  background-color: #1d1a1a;
+  box-shadow: 0px 0px 2px #1d1a1a;
+  z-index: 4; }
+  .info h3 {
+    color: #8c776d; }
+
+.short {
+  position: absolute;
+  margin-top: 30%;
+  color: #766B7B;
+  text-shadow: 1px 1px 1px black, 0 0 1em #030407, 0 0 0.2em #030407;
+  opacity: .9;
+  font-family: stellas-coffee-font; }
+
+.header-example {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 10vh;
+  background-color: #1d1a1a;
+  box-shadow: 0px 2px 2px #1d1a1a; }
+  .header-example .links ul {
+    display: flex;
+    flex-flow: row; }
+    .header-example .links ul li {
+      margin-right: 30px;
+      font-size: 2em;
+      font-family: Oswald; }
+
+.logo {
+  position: absolute;
+  margin-top: -10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 50%;
+  margin-left: 20px;
+  padding-top: 10px;
+  background-color: white;
+  border: 10px solid #323232; }
+  .logo img {
+    margin-top: -5%;
+    height: 125px;
+    width: 168px; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  width: 100%;
+  background-color: #030407;
+  box-shadow: 0px -2px 2px #030407;
+  color: #8c776d;
+  font-family: Roboto; }
