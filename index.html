@@ -6,14 +6,17 @@
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    <!-- font awsome -->
+    <script src="https://use.fontawesome.com/fe7b22a8ea.js"></script>
+    <!-- scripts -->
+    <script type="text/javascript" src="/js/calander.js"></script>
   </head>
   <body>
-    <body>
       <div class="header-example">
         <div class="links">
           <ul>
             <li class='link'>Photos</li>
-            <li class='link'>Events</li>
+            <li class='link' id="events">Events</li>
             <li class='link'>FAQ's</li>
             <li class='link'>Contact</li>
           </ul>
@@ -27,7 +30,7 @@
         <video preload="preload" id="video" autoplay="autoplay" loop="loop">
         <source src="assets/Videos/couple-drinking-coffee.mp4" type="video/mp4"></source>
         </video>
-        <h3 class="short">An Oasis in the city cared for by friends and family since 1991</h3>
+        <h3 id="short">An Oasis in the city cared for by friends and family since 1991</h3>
         <div class="info">
           <h3>Address</h3>
           <p>1476 S. Pearl St.</p>
@@ -38,7 +41,7 @@
                 data=!3m1!4b1!4m5!3m4!1s0x876c7e521eb58993:0x22ebae65277f1c26!8m2!3d39
                 .6896754!4d-104.9801567">GET DIRECTIONS</a></p>
           <h3>Phone</h3>
-          <p>(303) 777-1031</p>
+          <p><a href="tel:3037771031">303.777.1031</a></p>
         </div>
         <div class="info">
           <h3>Hours</h3>
@@ -58,6 +61,17 @@
       <div class="footer">
         <small>Stella's Coffee House ©2017</small>
       </div>
-    </body>
+
+      <!-- calendar model -->
+      <div class="model-shield" id="calModel">
+        <div class="calendar-model">
+            <div class="calTitle">Stella's Music and Event Calendar</div>
+            <div id="closeCal"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+            <iframe src="https://calendar.google.com/calendar/embed?showTz=0&amp;mode=AGENDA&amp;height=600&amp;
+            wkst=1&amp;bgcolor=%23DDD3A0&amp;src=eickk927r5poqqi2occdm0gtks%40group.calendar.google.com&amp;
+            color=%23B1440E&amp;ctz=America%2FDenver" style="border-width:0" width="800" height="550"
+            frameborder="0" scrolling="yes"></iframe>
+        </div>
+      </div>
   </body>
 </html>
