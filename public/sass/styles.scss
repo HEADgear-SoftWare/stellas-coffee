@@ -10,8 +10,14 @@ $paragraph-font: Roboto;
 @font-face { font-family: stellas-coffee-font; src: url('../assets/fonts/stellas-fonts/christie.ttf') }
 
 body {
+  display: block;
   overflow: hidden;
   background-color: $background-dark-color;
+}
+@media screen and (max-device-width: 800px) {
+  body {
+    overflow-y: scroll;
+  }
 }
 
 h1 {
@@ -62,6 +68,7 @@ a {
   }
 }
 
+// show/hide for SPA actions +===}========>
 .show {
   visibility: visible;
   transition: opacity 0.5s ease;
@@ -76,46 +83,8 @@ a {
   visibility: hidden;
 }
 
-.center {
-  width: 100%;
-  height: 85vh;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  video {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100;
-  }
-}
 
-.info {
-  height: 180px;
-  width: 250px;
-  margin-top: 55vh;
-  padding-top: $padding-top-large;
-  border-radius: 20px;
-  color: $off-white-color;
-  background-color: $background-opaque-dark-color;
-  box-shadow: 0px 0px 2px $background-dark-color;
-  z-index: 4;
-  h3 {
-    color: $greyish-color;
-  }
-}
-
-#short {
-  position: absolute;
-  margin-top: 48vh;
-  color: #766B7B;
-  font-size: 2em;
-  text-shadow: 1px 1px 1px black, 0 0 1em $blackish-color, 0 0 0.2em $blackish-color;
-  opacity: .9;
-  font-family: stellas-coffee-font;
-}
-.header-example {
+.header-nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -127,6 +96,8 @@ a {
     ul {
       display: flex;
       flex-flow: row;
+      flex-wrap: wrap;
+      margin-left: 12.5vw;
       li {
         margin-right: 30px;
         font-size: 2em;
@@ -134,6 +105,23 @@ a {
       }
     }
   }
+}
+
+@media screen and (max-device-width: 800px) {
+    .header-nav {
+      width: 100vw;
+      height: 20vh;
+      justify-content: center;
+      ul {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+          margin-bottom: .5em;
+          margin-top: .5em;
+          margin-right: 50;
+        }
+      }
+    }
 }
 
 .logo {
@@ -155,6 +143,81 @@ a {
     width: 168px;
   }
 }
+@media screen and (max-device-width: 800px) {
+  .logo {
+    width: 75vw;
+    height: 40vw;
+    margin-left: 12.5vw;
+    margin-top: 2vh;
+  }
+}
+
+.center {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  video {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+  }
+}
+@media screen and (max-device-width: 800px) {
+    .center {
+        width: 100vw;
+        background-color: $espresso-red;
+    }
+    video {
+        display: none;
+    }
+}
+
+#short {
+  position: absolute;
+  margin-top: 48vh;
+  color: #766B7B;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px black, 0 0 1em $blackish-color, 0 0 0.2em $blackish-color;
+  opacity: .9;
+  font-family: stellas-coffee-font;
+}
+@media screen and (max-device-width: 800px) {
+  #short {
+    color: $off-white-color;
+    margin-top: 30vh;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.info {
+  height: 180px;
+  width: 250px;
+  margin-top: 55vh;
+  padding-top: $padding-top-large;
+  border-radius: 20px;
+  color: $off-white-color;
+  background-color: $background-opaque-dark-color;
+  box-shadow: 0px 0px 2px $background-dark-color;
+  z-index: 4;
+  h3 {
+    color: $greyish-color;
+  }
+}
+@media screen and (max-device-width: 800px) {
+  .info {
+    margin-top: 1em;
+  }
+  .info:first-of-type {
+    margin-top: 50vh;
+  }
+}
 
 .footer {
   display: flex;
@@ -166,5 +229,10 @@ a {
   box-shadow: 0px -2px 2px $blackish-color;
   color: $greyish-color;
   font-family: $paragraph-font;
-
+}
+@media screen and (max-device-width: 800px) {
+  .footer {
+    height: 20vh;
+    margin-top: 110%;
+  }
 }
