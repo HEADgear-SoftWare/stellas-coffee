@@ -181,7 +181,7 @@ a {
 .info {
   height: 180px;
   width: 250px;
-  margin-top: 35%;
+  margin-top: 55vh;
   padding-top: 10px;
   border-radius: 20px;
   color: #ddd3a0;
@@ -193,8 +193,9 @@ a {
 
 #short {
   position: absolute;
-  margin-top: 30%;
+  margin-top: 48vh;
   color: #766B7B;
+  font-size: 2em;
   text-shadow: 1px 1px 1px black, 0 0 1em #030407, 0 0 0.2em #030407;
   opacity: .9;
   font-family: stellas-coffee-font; }
