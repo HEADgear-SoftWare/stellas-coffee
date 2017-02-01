@@ -200,6 +200,37 @@ a {
   opacity: 0;
   visibility: hidden; }
 
+.mobileHeader {
+  visibility: hidden; }
+
+@media screen and (max-device-width: 750px) {
+  .mobileHeader {
+    visibility: visible;
+    height: 10vmax;
+    width: 100%;
+    z-index: 10;
+    background-color: #1d1a1a; }
+    .mobileHeader .mobileBurger {
+      float: right;
+      margin-right: 1em;
+      margin-top: 0.25em;
+      display: inline-block;
+      cursor: pointer;
+      z-index: 11; }
+    .mobileHeader .bar1, .mobileHeader .bar2, .mobileHeader .bar3 {
+      width: 40px;
+      height: 5px;
+      background-color: #bd8e74;
+      margin: 10px 0;
+      transition: 0.4s; }
+    .mobileHeader .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-13px, 13px);
+      transform: rotate(-45deg) translate(-13px, 13px); }
+    .mobileHeader .change .bar2 {
+      opacity: 0; }
+    .mobileHeader .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px); } }
 .header-nav {
   display: flex;
   align-items: center;
@@ -220,6 +251,7 @@ a {
 
 @media screen and (max-device-width: 750px) {
   .header-nav {
+    visibility: hidden;
     width: 100vw;
     height: 20%;
     justify-content: center;
