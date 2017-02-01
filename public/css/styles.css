@@ -145,7 +145,7 @@ body {
   overflow: hidden;
   background-color: #ddd3a0; }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 750px) {
   body {
     overflow-y: scroll; } }
 h1 {
@@ -218,10 +218,10 @@ a {
       font-size: 2em;
       font-family: Oswald; }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 750px) {
   .header-nav {
     width: 100vw;
-    height: 20vh;
+    height: 20%;
     justify-content: center;
     box-shadow: none; }
     .header-nav ul {
@@ -233,7 +233,7 @@ a {
         margin-right: 50; } }
 .logo {
   position: absolute;
-  margin-top: -9vh;
+  margin-top: -5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,12 +249,12 @@ a {
     height: 125px;
     width: 168px; }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 750px) {
   .logo {
     width: 75vw;
     height: 40vw;
     margin-left: 12.5vw;
-    margin-top: 2vh; }
+    margin-top: 2%; }
     .logo img {
       height: 33vw;
       width: 42vw; } }
@@ -273,7 +273,7 @@ a {
     min-height: 100%;
     z-index: -100; }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 750px) {
   .center {
     width: 100vw;
     background-color: #832209;
@@ -290,7 +290,7 @@ a {
   opacity: .9;
   font-family: stellas-coffee-font; }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 750px) {
   #short {
     color: #ddd3a0;
     margin-top: 55%;
@@ -309,10 +309,10 @@ a {
   .info h3 {
     color: #8c776d; }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 750px) {
   .info {
     width: 75%;
-    height: 39%;
+    height: 40vmax;
     margin-top: 1em;
     background-color: #1d1a1a;
     box-shadow: none;
@@ -334,8 +334,8 @@ a {
   color: #8c776d;
   font-family: Roboto; }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 750px) {
   .footer {
-    height: 20vh;
-    margin-top: 150%;
+    height: 25vw;
+    margin-top: 110vmax;
     box-shadow: none; } }
