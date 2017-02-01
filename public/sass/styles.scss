@@ -176,6 +176,7 @@ a {
 @media screen and (max-device-width: 750px) {
     .center {
         width: 100vw;
+        height: 100vmax;
         background-color: $espresso-red;
         border-bottom: solid 5px $background-dark-color;
     }
@@ -218,19 +219,25 @@ a {
 }
 @media screen and (max-device-width: 750px) {
   .info {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
     width: 75%;
-    height: 40vmax;
+    height: 50vmax;
     margin-top: 1em;
     background-color: $background-dark-color;
     box-shadow: none;
     border: solid 2px $blackish-color;
+    div h3:first-child {
+      margin-bottom: 1em;
+    }
     p {
       font-size: 1.1em;
       margin-bottom: 1em;
     }
   }
   .info:first-of-type {
-    margin-top: 100%;
+    margin-top: 60vmax;
   }
 }
 
@@ -248,7 +255,7 @@ a {
 @media screen and (max-device-width: 750px) {
   .footer {
     height: 25vw;
-    margin-top: 110vmax;
+    margin-top: 130vmax;
     box-shadow: none;
   }
 }
