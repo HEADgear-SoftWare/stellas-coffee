@@ -143,7 +143,7 @@ table {
 body {
   display: block;
   overflow: hidden;
-  background-color: #1d1a1a; }
+  background-color: #ddd3a0; }
 
 @media screen and (max-device-width: 800px) {
   body {
@@ -222,7 +222,8 @@ a {
   .header-nav {
     width: 100vw;
     height: 20vh;
-    justify-content: center; }
+    justify-content: center;
+    box-shadow: none; }
     .header-nav ul {
       justify-content: space-between;
       flex-wrap: wrap; }
@@ -275,7 +276,8 @@ a {
 @media screen and (max-device-width: 800px) {
   .center {
     width: 100vw;
-    background-color: #832209; }
+    background-color: #832209;
+    border-bottom: solid 5px #1d1a1a; }
 
   video {
     display: none; } }
@@ -311,7 +313,13 @@ a {
   .info {
     width: 75%;
     height: 39%;
-    margin-top: 1em; }
+    margin-top: 1em;
+    background-color: #1d1a1a;
+    box-shadow: none;
+    border: solid 2px #030407; }
+    .info p {
+      font-size: 1.1em;
+      margin-bottom: 1em; }
 
   .info:first-of-type {
     margin-top: 100%; } }
@@ -329,4 +337,5 @@ a {
 @media screen and (max-device-width: 800px) {
   .footer {
     height: 20vh;
-    margin-top: 150%; } }
+    margin-top: 150%;
+    box-shadow: none; } }

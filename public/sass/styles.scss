@@ -12,7 +12,7 @@ $paragraph-font: Roboto;
 body {
   display: block;
   overflow: hidden;
-  background-color: $background-dark-color;
+  background-color: $off-white-color;
 }
 @media screen and (max-device-width: 800px) {
   body {
@@ -112,6 +112,7 @@ a {
       width: 100vw;
       height: 20vh;
       justify-content: center;
+      box-shadow: none;
       ul {
         justify-content: space-between;
         flex-wrap: wrap;
@@ -176,6 +177,7 @@ a {
     .center {
         width: 100vw;
         background-color: $espresso-red;
+        border-bottom: solid 5px $background-dark-color;
     }
     video {
         display: none;
@@ -219,6 +221,13 @@ a {
     width: 75%;
     height: 39%;
     margin-top: 1em;
+    background-color: $background-dark-color;
+    box-shadow: none;
+    border: solid 2px $blackish-color;
+    p {
+      font-size: 1.1em;
+      margin-bottom: 1em;
+    }
   }
   .info:first-of-type {
     margin-top: 100%;
@@ -240,5 +249,6 @@ a {
   .footer {
     height: 20vh;
     margin-top: 150%;
+    box-shadow: none;
   }
 }
