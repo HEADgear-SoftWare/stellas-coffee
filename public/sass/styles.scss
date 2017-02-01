@@ -149,6 +149,10 @@ a {
     height: 40vw;
     margin-left: 12.5vw;
     margin-top: 2vh;
+    img {
+      height: 33vw;
+      width: 42vw;
+    }
   }
 }
 
@@ -190,7 +194,7 @@ a {
 @media screen and (max-device-width: 800px) {
   #short {
     color: $off-white-color;
-    margin-top: 30vh;
+    margin-top: 55%;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -212,10 +216,12 @@ a {
 }
 @media screen and (max-device-width: 800px) {
   .info {
+    width: 75%;
+    height: 39%;
     margin-top: 1em;
   }
   .info:first-of-type {
-    margin-top: 50vh;
+    margin-top: 100%;
   }
 }
 
@@ -233,6 +239,6 @@ a {
 @media screen and (max-device-width: 800px) {
   .footer {
     height: 20vh;
-    margin-top: 110%;
+    margin-top: 150%;
   }
 }
