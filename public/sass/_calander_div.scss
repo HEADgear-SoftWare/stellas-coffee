@@ -32,6 +32,16 @@
   }
 }
 
+.calTitle {
+  position: absolute;
+  top: 0;
+  margin-left: -3vw;
+  margin-top: 1vh;
+  font-family: stellas-coffee-font;
+  font-size: 3vw;
+  color: $white-color;
+}
+
 .calendar-model iframe {
   position: absolute;
   top: 10%;
@@ -40,24 +50,13 @@
   height: 100%;
 }
 
-.calTitle {
-  position: absolute;
-  top: 0;
-  margin-left: 0;
-  margin-top: 1%;
-  font-family: stellas-coffee-font;
-  font-size: 3vw;
-  color: $white-color;
-}
-
-
 #closeCal {
   position: absolute;
   font-size: 3em;
   transition: color 0.3s ease;
   color: $brownish-color;
   top: 1%;
-  margin-left: 45%;
+  margin-left: 22vw;
   &:hover {
     cursor: pointer;
     transition: color 0.3s ease;
@@ -65,6 +64,23 @@
   }
 }
 
-#calendarTitle {
-  font-size: 40px;
+// small device +===}========>
+@media screen and (max-width: 750px) {
+  .calendar-model {
+    margin-left: 0;
+    margin-top: 0;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    border: none;
+  }
+  .calTitle {
+    font-size: 2em;
+    margin-right: 20vw;
+  }
+  #closeCal {
+    position: absolute;
+    display: inline-block;
+    margin-left: 43vw;
+  }
 }

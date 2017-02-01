@@ -74,6 +74,15 @@ table {
   .calendar-model:hover {
     cursor: pointer; }
 
+.calTitle {
+  position: absolute;
+  top: 0;
+  margin-left: -3vw;
+  margin-top: 1vh;
+  font-family: stellas-coffee-font;
+  font-size: 3vw;
+  color: white; }
+
 .calendar-model iframe {
   position: absolute;
   top: 10%;
@@ -81,30 +90,35 @@ table {
   width: 100%;
   height: 100%; }
 
-.calTitle {
-  position: absolute;
-  top: 0;
-  margin-left: 0;
-  margin-top: 1%;
-  font-family: stellas-coffee-font;
-  font-size: 3vw;
-  color: white; }
-
 #closeCal {
   position: absolute;
   font-size: 3em;
   transition: color 0.3s ease;
   color: #bd8e74;
   top: 1%;
-  margin-left: 45%; }
+  margin-left: 22vw; }
   #closeCal:hover {
     cursor: pointer;
     transition: color 0.3s ease;
     color: #8a5b41; }
 
-#calendarTitle {
-  font-size: 40px; }
+@media screen and (max-width: 750px) {
+  .calendar-model {
+    margin-left: 0;
+    margin-top: 0;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    border: none; }
 
+  .calTitle {
+    font-size: 2em;
+    margin-right: 20vw; }
+
+  #closeCal {
+    position: absolute;
+    display: inline-block;
+    margin-left: 43vw; } }
 @font-face {
   font-family: stellas-coffee-font;
   src: url("../assets/fonts/stellas-fonts/christie.ttf"); }
