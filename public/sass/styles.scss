@@ -89,17 +89,17 @@ a {
 @media screen and (max-device-width: 750px) {
   .mobileHeader {
     visibility: visible;
-    height: 10vmax;
+    height: 20vmax;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
     background-color: $background-dark-color;
     .mobileBurger {
         float: right;
-        margin-right: 1em;
-        margin-top: 0.25em;
+        margin-right: 7%;
+        margin-top: 10%;
         display: inline-block;
         cursor: pointer;
-        z-index: 11;
+        z-index: 21;
     }
 
     .bar1, .bar2, .bar3 {
@@ -152,6 +152,8 @@ a {
       visibility: hidden;
       width: 100vw;
       height: 20%;
+      margin-top: -40%;
+      z-index: 10;
       justify-content: center;
       box-shadow: none;
       ul {
@@ -225,60 +227,75 @@ a {
         display: none;
     }
 }
-
-#short {
-  position: absolute;
-  margin-top: 48vh;
-  color: #766B7B;
-  font-size: 2em;
-  text-shadow: 1px 1px 1px black, 0 0 1em $blackish-color, 0 0 0.2em $blackish-color;
-  opacity: .9;
-  font-family: stellas-coffee-font;
-}
-@media screen and (max-device-width: 750px) {
+#shortDiv {
+  width: 100%;
+  height: auto;
+  margin-top: 47vh;
+  text-align: center;
   #short {
-    color: $off-white-color;
-    margin-top: 55%;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-}
-
-.info {
-  height: 180px;
-  width: 250px;
-  margin-top: 55vh;
-  padding-top: $padding-top-large;
-  border-radius: 20px;
-  color: $off-white-color;
-  background-color: $background-opaque-dark-color;
-  box-shadow: 0px 0px 2px $background-dark-color;
-  z-index: 4;
-  h3 {
-    color: $greyish-color;
+    color: #766B7B;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px black, 0 0 1em $blackish-color, 0 0 0.2em $blackish-color;
+    opacity: .9;
+    font-family: stellas-coffee-font;
   }
 }
 @media screen and (max-device-width: 750px) {
-  .info {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
+  #shortDiv {
+    margin-top: 65%;
     width: 75%;
-    height: 50vmax;
-    margin-top: 1em;
-    background-color: $background-dark-color;
-    box-shadow: none;
-    border: solid 2px $blackish-color;
-    div h3:first-child {
-      margin-bottom: 1em;
-    }
-    p {
-      font-size: 1.1em;
-      margin-bottom: 1em;
+    text-align: justify;
+    #short {
+      color: $off-white-color;
     }
   }
-  .info:first-of-type {
-    margin-top: 60vmax;
+}
+.info-container {
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 100vw;
+  margin-top: 55vh;
+  .info {
+    height: 180px;
+    width: 250px;
+    padding-top: $padding-top-large;
+    border-radius: 20px;
+    color: $off-white-color;
+    background-color: $background-opaque-dark-color;
+    box-shadow: 0px 0px 2px $background-dark-color;
+    z-index: 4;
+    h3 {
+      color: $greyish-color;
+    }
+  }
+}
+@media screen and (max-device-width: 750px) {
+  .info-container {
+    flex-flow: column;
+    margin-top: 100%;
+    width: 100%;
+    height: auto;
+    .info {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+      width: 75%;
+      height: 50vmax;
+      margin-top: 5vh;
+      margin-left: 12.5%;
+      background-color: $background-dark-color;
+      box-shadow: none;
+      border: ridge 4px $greyish-color;
+      div h3:first-child {
+        margin-bottom: 1em;
+      }
+      p {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+      }
+    }
   }
 }
 
@@ -296,7 +313,7 @@ a {
 @media screen and (max-device-width: 750px) {
   .footer {
     height: 25vw;
-    margin-top: 130vmax;
+    margin-top: 140vmax;
     box-shadow: none;
   }
 }

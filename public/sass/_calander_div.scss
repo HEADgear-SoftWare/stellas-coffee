@@ -8,7 +8,7 @@
   width: 100%;
   overflow: auto;
   background-color: $model-shield-background-color;
-  z-index: 10;
+  z-index: 30;
   visibility: hidden;
   opacity: 0.0;
 }
@@ -23,7 +23,7 @@
   height: 75%;
   width: 50%;
   overflow: hidden;
-  z-index: 11;
+  z-index: 31;
   background-color: $blackish-color;
   border: ridge 3px $greyish-color;
   border-radius: 30px;
