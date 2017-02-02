@@ -88,6 +88,7 @@ a {
 }
 @media screen and (max-device-width: 750px) {
   .mobileHeader {
+    position: fixed;
     visibility: visible;
     height: 20vmax;
     width: 100%;
@@ -195,7 +196,7 @@ a {
     width: 75vw;
     height: 40vw;
     margin-left: 12.5vw;
-    margin-top: 2%;
+    margin-top: 40%;
     img {
       height: 33vw;
       width: 42vw;
@@ -209,6 +210,7 @@ a {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  margin-top: 10%;
   justify-content: space-around;
   video {
     position: absolute;
@@ -222,9 +224,9 @@ a {
 @media screen and (max-device-width: 750px) {
     .center {
         width: 100vw;
-        height: 100vmax;
+        height: 150vmax;
         background-color: $espresso-red;
-        border-bottom: solid 5px $background-dark-color;
+        border-bottom: solid 20px $background-dark-color;
     }
     video {
         display: none;
@@ -245,7 +247,7 @@ a {
 }
 @media screen and (max-device-width: 750px) {
   #shortDiv {
-    margin-top: 65%;
+    margin-top: 85%;
     width: 75%;
     text-align: justify;
     #short {
@@ -254,7 +256,7 @@ a {
   }
 }
 .info-container {
-  position: absolute;
+  position: inherit;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
@@ -278,7 +280,7 @@ a {
   .info-container {
     position: absolute;
     flex-flow: column;
-    margin-top: 90%;
+    margin-top: 110%;
     width: 100%;
     height: auto;
     .info {
@@ -317,7 +319,7 @@ a {
 @media screen and (max-device-width: 750px) {
   .footer {
     height: 25vw;
-    margin-top: 140vmax;
+    margin-top: 90vmax;
     box-shadow: none;
   }
 }

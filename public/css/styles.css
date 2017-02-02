@@ -46,6 +46,7 @@ table {
   border-spacing: 0; }
 
 .model-shield {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -54,8 +55,8 @@ table {
   overflow: auto;
   background-color: rgba(11, 10, 10, 0.3);
   z-index: 30;
-  visibility: hidden;
-  opacity: 0.0; }
+  opacity: 0.0;
+  visibility: hidden; }
 
 .calendar-model {
   display: flex;
@@ -205,6 +206,7 @@ a {
 
 @media screen and (max-device-width: 750px) {
   .mobileHeader {
+    position: fixed;
     visibility: visible;
     height: 20vmax;
     width: 100%;
@@ -289,7 +291,7 @@ a {
     width: 75vw;
     height: 40vw;
     margin-left: 12.5vw;
-    margin-top: 2%; }
+    margin-top: 40%; }
     .logo img {
       height: 33vw;
       width: 42vw; } }
@@ -299,6 +301,7 @@ a {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  margin-top: 10%;
   justify-content: space-around; }
   .center video {
     position: absolute;
@@ -311,9 +314,9 @@ a {
 @media screen and (max-device-width: 750px) {
   .center {
     width: 100vw;
-    height: 100vmax;
+    height: 150vmax;
     background-color: #832209;
-    border-bottom: solid 5px #1d1a1a; }
+    border-bottom: solid 20px #1d1a1a; }
 
   video {
     display: none; } }
@@ -331,13 +334,13 @@ a {
 
 @media screen and (max-device-width: 750px) {
   #shortDiv {
-    margin-top: 65%;
+    margin-top: 85%;
     width: 75%;
     text-align: justify; }
     #shortDiv #short {
       color: #ddd3a0; } }
 .info-container {
-  position: absolute;
+  position: inherit;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
@@ -359,7 +362,7 @@ a {
   .info-container {
     position: absolute;
     flex-flow: column;
-    margin-top: 90%;
+    margin-top: 110%;
     width: 100%;
     height: auto; }
     .info-container .info {
@@ -392,5 +395,5 @@ a {
 @media screen and (max-device-width: 750px) {
   .footer {
     height: 25vw;
-    margin-top: 140vmax;
+    margin-top: 90vmax;
     box-shadow: none; } }

@@ -1,6 +1,7 @@
 @import "colors";
 
 .model-shield {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -9,8 +10,8 @@
   overflow: auto;
   background-color: $model-shield-background-color;
   z-index: 30;
-  visibility: hidden;
   opacity: 0.0;
+  visibility: hidden;
 }
 
 .calendar-model {
