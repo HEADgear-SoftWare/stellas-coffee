@@ -210,7 +210,6 @@ a {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  margin-top: 10%;
   justify-content: space-around;
   video {
     position: absolute;
@@ -225,6 +224,7 @@ a {
     .center {
         width: 100vw;
         height: 150vmax;
+        margin-top: 10%;
         background-color: $espresso-red;
         border-bottom: solid 20px $background-dark-color;
     }
@@ -261,7 +261,6 @@ a {
   flex-flow: row;
   justify-content: space-around;
   width: 100vw;
-  margin-top: 55vh;
   .info {
     height: 180px;
     width: 250px;
@@ -281,6 +280,7 @@ a {
     position: absolute;
     flex-flow: column;
     margin-top: 110%;
+    margin-left: -90%;
     width: 100%;
     height: auto;
     .info {
@@ -319,7 +319,7 @@ a {
 @media screen and (max-device-width: 750px) {
   .footer {
     height: 25vw;
-    margin-top: 90vmax;
+    margin-top: 100vmax;
     box-shadow: none;
   }
 }

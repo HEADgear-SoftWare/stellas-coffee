@@ -301,7 +301,6 @@ a {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  margin-top: 10%;
   justify-content: space-around; }
   .center video {
     position: absolute;
@@ -315,6 +314,7 @@ a {
   .center {
     width: 100vw;
     height: 150vmax;
+    margin-top: 10%;
     background-color: #832209;
     border-bottom: solid 20px #1d1a1a; }
 
@@ -344,8 +344,7 @@ a {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  width: 100vw;
-  margin-top: 55vh; }
+  width: 100vw; }
   .info-container .info {
     height: 180px;
     width: 250px;
@@ -363,6 +362,7 @@ a {
     position: absolute;
     flex-flow: column;
     margin-top: 110%;
+    margin-left: -90%;
     width: 100%;
     height: auto; }
     .info-container .info {
@@ -395,5 +395,5 @@ a {
 @media screen and (max-device-width: 750px) {
   .footer {
     height: 25vw;
-    margin-top: 90vmax;
+    margin-top: 100vmax;
     box-shadow: none; } }
