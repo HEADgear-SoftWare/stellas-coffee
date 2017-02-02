@@ -112,14 +112,17 @@ a {
 
     .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-13px, 13px) ;
-        transform: rotate(-45deg) translate(-13px, 13px) ;
+        transform: rotate(-405deg) translate(-13px, 13px) ;
     }
 
-    .change .bar2 {opacity: 0;}
+    .change .bar2 {
+      transition: opacity 0.7s ease;
+      opacity: 0;
+    }
 
     .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-        transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(405deg) translate(-8px, -8px) ;
     }
   }
 }
@@ -273,8 +276,9 @@ a {
 }
 @media screen and (max-device-width: 750px) {
   .info-container {
+    position: absolute;
     flex-flow: column;
-    margin-top: 100%;
+    margin-top: 90%;
     width: 100%;
     height: auto;
     .info {
