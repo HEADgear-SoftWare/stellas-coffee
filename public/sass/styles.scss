@@ -118,7 +118,6 @@ a {
       transition: margin-left 0.5s;
       margin-left: 7%;
       margin-right: 90%;
-
     }
 
     .change .bar1 {
@@ -204,13 +203,13 @@ a {
 }
 @media screen and (max-device-width: 750px) {
   .logo {
-    width: 75vw;
-    height: 40vw;
+    width: 65vw;
+    height: 35vw;
     margin-left: 12.5vw;
     margin-top: 40%;
     img {
-      height: 33vw;
-      width: 42vw;
+      height: 25vw;
+      width: 35vw;
     }
   }
 }
