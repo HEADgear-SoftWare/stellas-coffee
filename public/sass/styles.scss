@@ -96,7 +96,9 @@ a {
     background-color: $background-dark-color;
     .mobileBurger {
         float: right;
+        transition: margin-right 0.5s;
         margin-right: 7%;
+        margin-left: 90%;
         margin-top: 10%;
         display: inline-block;
         cursor: pointer;
@@ -111,14 +113,23 @@ a {
         transition: 0.4s;
     }
 
+    .flipFlop {
+      float: left;
+      transition: margin-left 0.5s;
+      margin-left: 7%;
+      margin-right: 90%;
+
+    }
+
     .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-13px, 13px) ;
-        transform: rotate(-405deg) translate(-13px, 13px) ;
+        -webkit-transform: rotate(-45deg) translate(-13px, 13px);
+        transform: rotate(-405deg) translate(-13px, 13px);
     }
 
     .change .bar2 {
-      transition: opacity 0.7s ease;
+      transition: opacity 0.7s, margin-right 0.4s ease;
       opacity: 0;
+      margin-right: 90%;
     }
 
     .change .bar3 {
