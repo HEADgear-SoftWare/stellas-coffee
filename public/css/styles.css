@@ -152,9 +152,14 @@ table {
   .faqs-model:hover {
     cursor: pointer; }
   .faqs-model .faqs-content {
+    position: absolute;
+    margin-left: 0;
+    top: 10%;
     width: 100%;
     height: 90%;
-    color: #ddd3a0; }
+    background-color: #832209;
+    color: #ddd3a0;
+    font-family: Roboto; }
 
 .faqTitle {
   position: absolute;
