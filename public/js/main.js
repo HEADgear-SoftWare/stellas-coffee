@@ -4,5 +4,5 @@ function burgerFunction(x) {
     var b = document.getElementsByClassName('mobileBurger');
     b[0].classList.toggle("flipFlop");
     var c = document.getElementsByClassName('header-nav');
-    c[0].classList.toggle("header-nav-close");
+    c[0].classList.toggle("header-nav-open");
 }
