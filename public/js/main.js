@@ -53,6 +53,7 @@ function showFaqs() {
 function hideFaqs() {
   var faq = document.getElementById('faqModel');
   faq.className = "model-shield hide";
+  showInfo();
 }
 
 // js for mobile burger
