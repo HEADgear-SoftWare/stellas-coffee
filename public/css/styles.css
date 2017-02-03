@@ -207,10 +207,11 @@ a {
 @media screen and (max-device-width: 750px) {
   .mobileHeader {
     position: fixed;
+    margin-top: -10%;
     visibility: visible;
     height: 20vmax;
     width: 100%;
-    z-index: 20;
+    z-index: 25;
     background-color: #1d1a1a; }
     .mobileHeader .mobileBurger {
       float: right;
@@ -262,20 +263,31 @@ a {
 
 @media screen and (max-device-width: 750px) {
   .header-nav {
-    visibility: hidden;
+    border-top: double 10px #ddd3a0;
+    border-bottom: double 7px #ddd3a0;
+    position: fixed;
+    visibility: visible;
     width: 100vw;
-    height: 20%;
-    margin-top: -40%;
-    z-index: 10;
+    height: 50%;
+    transition: margin-top 0.4s linear;
+    margin-top: -75%;
+    z-index: 20;
     justify-content: center;
     box-shadow: none; }
-    .header-nav ul {
-      justify-content: space-between;
-      flex-wrap: wrap; }
-      .header-nav ul li {
-        margin-bottom: .5em;
-        margin-top: .5em;
-        margin-right: 50; } }
+    .header-nav .links {
+      width: 75vw; }
+      .header-nav .links ul {
+        justify-content: space-between;
+        flex-flow: column;
+        justify-content: flex-start; }
+        .header-nav .links ul li {
+          margin-bottom: .5em;
+          margin-top: .5em;
+          margin-right: 50; } }
+.header-nav-close {
+  transition: margin-top 0.4s linear;
+  margin-top: 25%; }
+
 .logo {
   position: absolute;
   margin-top: -5%;
@@ -369,7 +381,7 @@ a {
   .info-container {
     position: absolute;
     flex-flow: column;
-    margin-top: 110%;
+    margin-top: 130%;
     margin-left: -90%;
     width: 100%;
     height: auto; }
@@ -403,5 +415,5 @@ a {
 @media screen and (max-device-width: 750px) {
   .footer {
     height: 25vw;
-    margin-top: 100vmax;
+    margin-top: 130vmax;
     box-shadow: none; } }
