@@ -1,0 +1,15 @@
+@import "colors";
+
+.model-shield {
+  display: absolute;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: $model-shield-background-color;
+  z-index: 30;
+  opacity: 0.0;
+  visibility: hidden;
+}

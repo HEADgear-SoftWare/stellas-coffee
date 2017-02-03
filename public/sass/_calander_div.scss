@@ -1,19 +1,5 @@
 @import "colors";
 
-.model-shield {
-  display: absolute;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: $model-shield-background-color;
-  z-index: 30;
-  opacity: 0.0;
-  visibility: hidden;
-}
-
 .calendar-model {
   display: flex;
   align-items: center;
@@ -36,7 +22,7 @@
 .calTitle {
   position: absolute;
   top: 0;
-  margin-left: -3vw;
+  margin-left: 5%;
   margin-top: 1vh;
   font-family: stellas-coffee-font;
   font-size: 3vw;
@@ -57,7 +43,7 @@
   transition: color 0.3s ease;
   color: $brownish-color;
   top: 1%;
-  margin-left: 22vw;
+  margin-left: -45%;
   &:hover {
     cursor: pointer;
     transition: color 0.3s ease;
@@ -83,18 +69,17 @@
     display: inline-block;
     float: left;
     font-size: 2em;
-    margin-left: -4%;
-    margin-right: 20%;
-    margin-top: 3%;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    margin-top: 7%;
   }
   #closeCal {
     display: inline-block;
-    float: right;
-    position: absolute;
+    float: left;
     font-size: 3em;
-    margin-left: 43%;
+    margin-left: -40%;
     margin-right: 2%;
-    margin-top: 0%;
+    margin-top: 7%;
   }
   .calendar-model iframe {
     width: 100vw;

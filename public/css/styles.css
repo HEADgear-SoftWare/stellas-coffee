@@ -45,19 +45,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.model-shield {
-  display: absolute;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(11, 10, 10, 0.3);
-  z-index: 30;
-  opacity: 0.0;
-  visibility: hidden; }
-
 .calendar-model {
   display: flex;
   align-items: center;
@@ -78,7 +65,7 @@ table {
 .calTitle {
   position: absolute;
   top: 0;
-  margin-left: -3vw;
+  margin-left: 5%;
   margin-top: 1vh;
   font-family: stellas-coffee-font;
   font-size: 3vw;
@@ -97,7 +84,7 @@ table {
   transition: color 0.3s ease;
   color: #bd8e74;
   top: 1%;
-  margin-left: 22vw; }
+  margin-left: -45%; }
   #closeCal:hover {
     cursor: pointer;
     transition: color 0.3s ease;
@@ -120,23 +107,44 @@ table {
     display: inline-block;
     float: left;
     font-size: 2em;
-    margin-left: -4%;
-    margin-right: 20%;
-    margin-top: 3%; }
+    margin-left: 15vw;
+    margin-right: 5vw;
+    margin-top: 7%; }
 
   #closeCal {
     display: inline-block;
-    float: right;
-    position: absolute;
+    float: left;
     font-size: 3em;
-    margin-left: 43%;
+    margin-left: -40%;
     margin-right: 2%;
-    margin-top: 0%; }
+    margin-top: 7%; }
 
   .calendar-model iframe {
     width: 100vw;
     height: 85vh;
     top: 15%; } }
+.faqTitle {
+  position: absolute;
+  top: 0;
+  margin-left: -3vw;
+  margin-top: 1vh;
+  font-family: stellas-coffee-font;
+  font-size: 3vw;
+  color: white; }
+
+.model-shield {
+  display: absolute;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(11, 10, 10, 0.3);
+  z-index: 30;
+  opacity: 0.0;
+  visibility: hidden; }
+
 @font-face {
   font-family: stellas-coffee-font;
   src: url("../assets/fonts/stellas-fonts/christie.ttf"); }
