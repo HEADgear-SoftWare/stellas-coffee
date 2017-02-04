@@ -1,6 +1,6 @@
 window.onload = function(){
     document.getElementById('faqs').addEventListener("click", showFaqs);
-    document.getElementById('closeFaq').addEventListener("click", hideFaqs);
+    document.getElementById('closeFaqs').addEventListener("click", hideFaqs);
     document.getElementById('faqModel').addEventListener("click", hideFaqs);
     document.getElementById('events').addEventListener("click", showEvents);
     document.getElementById('closeCal').addEventListener("click", hideEvents);

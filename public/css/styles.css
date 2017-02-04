@@ -154,12 +154,24 @@ table {
   .faqs-model .faqs-content {
     position: absolute;
     margin-left: 0;
-    top: 10%;
+    top: 15%;
     width: 100%;
-    height: 90%;
+    height: 85%;
     background-color: #832209;
     color: #ddd3a0;
     font-family: Roboto; }
+    .faqs-model .faqs-content ul {
+      height: 100%;
+      overflow-y: auto; }
+      .faqs-model .faqs-content ul li {
+        font-size: 1.5em;
+        margin-top: 4%;
+        margin-left: 5%;
+        margin-right: 5%; }
+        .faqs-model .faqs-content ul li .fa {
+          color: white; }
+        .faqs-model .faqs-content ul li:last-child {
+          margin-bottom: 15%; }
 
 .faqTitle {
   position: absolute;
@@ -170,6 +182,45 @@ table {
   font-size: 3vw;
   color: white; }
 
+#closeFaqs {
+  position: absolute;
+  font-size: 3em;
+  transition: color 0.3s ease;
+  color: #bd8e74;
+  top: 1%;
+  margin-left: -45%; }
+  #closeFaqs:hover {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #8a5b41; }
+
+@media screen and (max-width: 750px) {
+  .model-shield {
+    width: 100vw;
+    height: 100vh; }
+
+  .faqs-model {
+    margin-left: 0;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    border: none; }
+
+  .faqTitle {
+    float: left;
+    font-size: 2em;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    margin-top: 3%; }
+
+  #closeFaqs {
+    display: inline-block;
+    float: left;
+    font-size: 3em;
+    margin-left: -40%;
+    margin-right: 2%;
+    margin-top: 3%; } }
 .model-shield {
   display: absolute;
   position: fixed;
