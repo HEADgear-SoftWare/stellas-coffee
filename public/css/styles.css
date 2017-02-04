@@ -151,7 +151,7 @@ table {
   border-radius: 30px; }
   .faqs-model:hover {
     cursor: pointer; }
-  .faqs-model .faqs-content {
+  .faqs-model #faqs-content {
     position: absolute;
     margin-left: 0;
     top: 15%;
@@ -160,17 +160,17 @@ table {
     background-color: #832209;
     color: #ddd3a0;
     font-family: Roboto; }
-    .faqs-model .faqs-content ul {
+    .faqs-model #faqs-content ul {
       height: 100%;
       overflow-y: auto; }
-      .faqs-model .faqs-content ul li {
+      .faqs-model #faqs-content ul li {
         font-size: 1.5em;
         margin-top: 4%;
         margin-left: 5%;
         margin-right: 5%; }
-        .faqs-model .faqs-content ul li .fa {
+        .faqs-model #faqs-content ul li .fa {
           color: white; }
-        .faqs-model .faqs-content ul li:last-child {
+        .faqs-model #faqs-content ul li:last-child {
           margin-bottom: 15%; }
 
 .faqTitle {

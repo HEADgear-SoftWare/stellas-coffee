@@ -2,6 +2,9 @@ window.onload = function(){
     document.getElementById('faqs').addEventListener("click", showFaqs);
     document.getElementById('closeFaqs').addEventListener("click", hideFaqs);
     document.getElementById('faqModel').addEventListener("click", hideFaqs);
+    document.getElementById('faqs-content')
+            .addEventListener("click", function(e){
+            e.stopPropagation()});
     document.getElementById('events').addEventListener("click", showEvents);
     document.getElementById('closeCal').addEventListener("click", hideEvents);
     document.getElementById('calModel').addEventListener("click", hideEvents);
