@@ -109,10 +109,10 @@ a {
 @media screen and (max-device-width: 750px) {
   .mobileHeader {
     position: fixed;
-    margin-top: -6vh;
+    margin-top: -10vw;
     visibility: visible;
     height: 20vmax;
-    width: 100%;
+    width: 100vw;
     z-index: 25;
     background-color: $background-dark-color;
     border-bottom: double 7px $off-white-color;
@@ -190,9 +190,9 @@ a {
       position: fixed;
       visibility: visible;
       width: 100vw;
-      height: 50%;
+      height: 100vw;
       transition: margin-top 0.4s linear;
-      margin-top: -40vh;
+      margin-top: -55vh;
       z-index: 20;
       justify-content: center;
       box-shadow: none;
@@ -201,7 +201,8 @@ a {
         line-height: normal;
         ul {
           float: left;
-          margin-top: 5%;
+          margin-top: 1em;
+          margin-bottom: 2em;
           li {
             display: list-item;
             margin-bottom: .5em;
@@ -218,7 +219,7 @@ a {
 }
 .logo {
   position: absolute;
-  margin-top: -53vh;
+  margin-top: -30%;
   height: 150px;
   width: 300px;
   border-radius: 50%;

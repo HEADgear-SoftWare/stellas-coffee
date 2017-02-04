@@ -46,9 +46,7 @@ table {
   border-spacing: 0; }
 
 .calendar-model {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   position: relative;
   margin-left: 25%;
   margin-top: 12vh;
@@ -59,6 +57,8 @@ table {
   background-color: #030407;
   border: ridge 3px #8c776d;
   border-radius: 30px; }
+  .calendar-model .calTitle {
+    display: inline-block; }
   .calendar-model:hover {
     cursor: pointer; }
 
@@ -136,9 +136,7 @@ table {
   visibility: hidden; }
 
 .faqs-model {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   position: relative;
   margin-left: 25%;
   margin-top: 12vh;
@@ -149,6 +147,25 @@ table {
   background-color: #030407;
   border: ridge 3px #8c776d;
   border-radius: 30px; }
+  .faqs-model #closeFaqs {
+    display: inline-block;
+    position: relative;
+    font-size: 3em;
+    transition: color 0.3s ease;
+    color: #bd8e74;
+    top: 1%;
+    margin-left: 2%; }
+    .faqs-model #closeFaqs:hover {
+      cursor: pointer;
+      transition: color 0.3s ease;
+      color: #8a5b41; }
+  .faqs-model .faqTitle {
+    float: right;
+    margin-right: 25%;
+    margin-top: 1vh;
+    font-family: stellas-coffee-font;
+    font-size: 3vw;
+    color: white; }
   .faqs-model:hover {
     cursor: pointer; }
   .faqs-model #faqs-content {
@@ -173,27 +190,6 @@ table {
         .faqs-model #faqs-content ul li:last-child {
           margin-bottom: 15%; }
 
-.faqTitle {
-  position: absolute;
-  top: 0;
-  margin-left: -3vw;
-  margin-top: 1vh;
-  font-family: stellas-coffee-font;
-  font-size: 3vw;
-  color: white; }
-
-#closeFaqs {
-  position: absolute;
-  font-size: 3em;
-  transition: color 0.3s ease;
-  color: #bd8e74;
-  top: 1%;
-  margin-left: -45%; }
-  #closeFaqs:hover {
-    cursor: pointer;
-    transition: color 0.3s ease;
-    color: #8a5b41; }
-
 @media screen and (max-width: 750px) {
   .model-shield {
     width: 100vw;
@@ -206,21 +202,16 @@ table {
     width: 100%;
     border-radius: 0;
     border: none; }
-
-  .faqTitle {
-    float: left;
-    font-size: 2em;
-    margin-left: 15vw;
-    margin-right: 5vw;
-    margin-top: 3%; }
-
-  #closeFaqs {
-    display: inline-block;
-    float: left;
-    font-size: 3em;
-    margin-left: -40%;
-    margin-right: 2%;
-    margin-top: 3%; } }
+    .faqs-model #closeFaqs {
+      float: left;
+      margin-left: 5%;
+      margin-top: 3%; }
+    .faqs-model .faqTitle {
+      position: fixed;
+      font-size: 2em;
+      margin-right: 15%;
+      margin-left: 22%;
+      margin-top: 3%; } }
 .model-shield {
   display: absolute;
   position: fixed;
@@ -317,10 +308,10 @@ a {
 @media screen and (max-device-width: 750px) {
   .mobileHeader {
     position: fixed;
-    margin-top: -6vh;
+    margin-top: -10vw;
     visibility: visible;
     height: 20vmax;
-    width: 100%;
+    width: 100vw;
     z-index: 25;
     background-color: #1d1a1a;
     border-bottom: double 7px #ddd3a0; }
@@ -380,9 +371,9 @@ a {
     position: fixed;
     visibility: visible;
     width: 100vw;
-    height: 50%;
+    height: 100vw;
     transition: margin-top 0.4s linear;
-    margin-top: -40vh;
+    margin-top: -55vh;
     z-index: 20;
     justify-content: center;
     box-shadow: none; }
@@ -391,7 +382,8 @@ a {
       line-height: normal; }
       .header-nav .links ul {
         float: left;
-        margin-top: 5%; }
+        margin-top: 1em;
+        margin-bottom: 2em; }
         .header-nav .links ul li {
           display: list-item;
           margin-bottom: .5em;
@@ -403,7 +395,7 @@ a {
 
 .logo {
   position: absolute;
-  margin-top: -53vh;
+  margin-top: -30%;
   height: 150px;
   width: 300px;
   border-radius: 50%;

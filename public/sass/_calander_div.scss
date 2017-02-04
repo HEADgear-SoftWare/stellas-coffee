@@ -1,9 +1,7 @@
 @import "colors_and_fonts";
 
 .calendar-model {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   position: relative;
   margin-left: 25%;
   margin-top: 12vh;
@@ -14,6 +12,9 @@
   background-color: $blackish-color;
   border: ridge 3px $greyish-color;
   border-radius: 30px;
+  .calTitle {
+    display: inline-block;
+  }
   &:hover {
     cursor: pointer;
   }
