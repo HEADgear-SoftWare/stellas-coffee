@@ -228,7 +228,9 @@ table {
 body {
   display: block;
   overflow: hidden;
-  background-color: #ddd3a0; }
+  background-color: #ddd3a0;
+  background-image: url("/assets/images/video-placeholder.png");
+  background-position-y: 25%; }
   body video {
     position: fixed;
     object-fit: cover;
@@ -238,12 +240,15 @@ body {
     z-index: -100; }
 
 @media screen and (max-width: 1024px) {
-  body video {
-    top: 10%;
-    margin-left: -20%; } }
+  body {
+    background-position-x: 30%; }
+    body video {
+      top: 10%;
+      margin-left: -20%; } }
 @media screen and (max-device-width: 750px) {
   body {
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    background-image: none; }
     body video {
       display: none; } }
 h1 {

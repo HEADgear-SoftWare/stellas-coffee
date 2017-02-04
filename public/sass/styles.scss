@@ -14,6 +14,8 @@ body {
   display: block;
   overflow: hidden;
   background-color: $off-white-color;
+  background-image: url('/assets/images/video-placeholder.png');
+  background-position-y: 25%;
   video {
     position: fixed;
     object-fit: cover;
@@ -25,6 +27,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   body {
+    background-position-x: 30%; 
     video {
       top: 10%;
       margin-left: -20%;
@@ -34,6 +37,7 @@ body {
 @media screen and (max-device-width: 750px) {
   body {
     overflow-y: scroll;
+    background-image: none;
     video {
         display: none;
     }
