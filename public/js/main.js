@@ -15,6 +15,10 @@ window.onload = function(){
   document.getElementById('calModel').addEventListener("click", hideEvents);
 }
 
+setTimeout(function() {
+  document.getElementById('video').pause();
+}, 120000);
+
 function hideInfo() {
   var video = document.getElementById('video');
   video.pause();
