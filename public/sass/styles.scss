@@ -161,7 +161,8 @@ a {
 }
 
 .header-nav {
-  position: static;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 10vh;
   background-color: $background-dark-color;
@@ -213,11 +214,11 @@ a {
 }
 .header-nav-open {
   transition: margin-top 0.4s linear;
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 .logo {
   position: absolute;
-  margin-top: -5%;
+  margin-top: -53vh;
   height: 150px;
   width: 300px;
   border-radius: 50%;
@@ -225,6 +226,7 @@ a {
   padding-top: $padding-top-large;
   background-color: $white-color;
   border: 10px solid #323232;
+  z-index: 11;
   img {
     margin-top: 8px;
     margin-left: 66px;
@@ -250,10 +252,10 @@ a {
 .center {
   width: 100%;
   height: 85vh;
+  margin-top: 55vh;
   #shortDiv {
     width: 100%;
     height: auto;
-    margin-top: 45vh;
     text-align: center;
     #short {
       color: #766B7B;
