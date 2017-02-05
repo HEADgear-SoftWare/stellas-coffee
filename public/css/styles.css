@@ -254,7 +254,8 @@ body {
 @media screen and (max-device-width: 750px) {
   body {
     overflow-y: scroll;
-    background-image: none; }
+    background-image: none;
+    background-color: #ddd3a0; }
     body video {
       display: none; } }
 h1 {
