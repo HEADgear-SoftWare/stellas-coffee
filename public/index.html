@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!-- viewport meta tag -->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
     <title>Stellas Coffee</title>
@@ -13,136 +14,131 @@
     <!-- scripts -->
     <script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
-  </head>
-  <body>
-      <div class="header-nav">
+</head>
+
+<body>
+    <div class="header-nav">
         <div class="links">
-          <ul>
-            <li class='link'>Photos</li>
-            <li class='link' id="events">Events</li>
-            <li class='link' id="faqs">FAQ's</li>
-            <li class='link'>Contact</li>
-          </ul>
+            <ul>
+                <li class='link' id='photos'>Photos</li>
+                <li class='link' id="events">Events</li>
+                <li class='link' id="faqs">FAQ's</li>
+                <li class='link'>Contact</li>
+            </ul>
         </div>
-      </div>
-      <div class="mobileHeader">
+    </div>
+    <div class="mobileHeader">
         <div class="mobileBurger" onclick="burgerFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-      </div>
+    </div>
 
-      <div class="logo">
+    <div class="logo">
         <img src="assets/images/stellas.jpg" alt="stellas logo. A cup of coffee and the words Stellas Coffee">
-      </div>
+    </div>
 
-      <div class="center">
+    <div class="center">
         <div id="shortDiv">
             <span id="short">An Oasis in the city cared for by friends and family since 1991</span>
         </div>
 
         <div class="info-container">
-          <div class="info">
-            <div>
-              <h3>Address</h3>
-              <p>1476 S. Pearl St.</p>
-              <p>Denver, CO. 80210</p>
-              <p><a class="link" target="_blank"
-                    href="https://www.google.com/maps/place/Stella's+Gourmet+Coffee+and+
+            <div class="info">
+                <div>
+                    <h3>Address</h3>
+                    <p>1476 S. Pearl St.</p>
+                    <p>Denver, CO. 80210</p>
+                    <p>
+                        <a class="link" target="_blank" href="https://www.google.com/maps/place/Stella's+Gourmet+Coffee+and+
                     Such/@39.6896754,-104.9823454,17z/
                     data=!3m1!4b1!4m5!3m4!1s0x876c7e521eb58993:0x22ebae65277f1c26!8m2!3d39
-                    .6896754!4d-104.9801567">GET DIRECTIONS</a></p>
-            </div>
-            <div>
-              <h3>Phone</h3>
-              <p><a href="tel:3037771031">303.777.1031</a></p>
-            </div>
-          </div>
-
-          <div class="info">
-            <div>
-              <h3>Hours</h3>
-              <p>Mon - Thu: 6:30am - 11pm</p>
-              <p>Fri: 6:30am - 12pm</p>
-              <p>Sat: 7am - 12pm</p>
-              <p>Sun: 7am - 11pm</p>
+                    .6896754!4d-104.9801567">GET DIRECTIONS</a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:3037771031">303.777.1031</a></p>
+                </div>
             </div>
 
-          </div>
-          <div class="info">
-            <div>
-              <h3>Social Media</h3>
-              <p class="link"><i class="fa fa-facebook-square" aria-hidden="true">
+            <div class="info">
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon - Thu: 6:30am - 11pm</p>
+                    <p>Fri: 6:30am - 12pm</p>
+                    <p>Sat: 7am - 12pm</p>
+                    <p>Sun: 7am - 11pm</p>
+                </div>
+
+            </div>
+            <div class="info">
+                <div>
+                    <h3>Social Media</h3>
+                    <p class="link"><i class="fa fa-facebook-square" aria-hidden="true">
                 </i>
-                <a class="link" target="_blank"
-                href="https://www.facebook.com/Stellas-Coffee-109559171444/">facebook</a>
-              </p>
-              <p class="link"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</p>
-              <p class="link"><i class="fa fa-twitter-square" aria-hidden="true"></i> twitter</p>
-              <p class="link"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Google Reviews</p>
+                        <a class="link" target="_blank" href="https://www.facebook.com/Stellas-Coffee-109559171444/">facebook</a>
+                    </p>
+                    <p class="link"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</p>
+                    <p class="link"><i class="fa fa-twitter-square" aria-hidden="true"></i> twitter</p>
+                    <p class="link"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Google Reviews</p>
+                </div>
             </div>
-          </div>
-          <span class="stretch"></span>
-        </div> <!--info container -->
-      </div> <!--center -->
-      <div class="footer">
+            <span class="stretch"></span>
+        </div>
+        <!--info container -->
+    </div>
+    <!--center -->
+    <div class="footer">
         <small>Stella's Coffee House ©2017</small>
-      </div>
+    </div>
 
-      <!-- calendar model -->
-      <div class="model-shield" id="calModel">
+    <!-- calendar model -->
+    <div class="model-shield" id="calModel">
         <div class="calendar-model">
             <div id="closeCal"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
             <div class="calTitle">Stella's Music and Event Calendar</div>
             <iframe src="https://calendar.google.com/calendar/embed?showTz=0&amp;mode=AGENDA&amp;height=600&amp;
             wkst=1&amp;bgcolor=%23DDD3A0&amp;src=eickk927r5poqqi2occdm0gtks%40group.calendar.google.com&amp;
-            color=%23B1440E&amp;ctz=America%2FDenver" style="border-width:0" width="400" height="275"
-            frameborder="0" scrolling="yes"></iframe>
+            color=%23B1440E&amp;ctz=America%2FDenver" style="border-width:0" width="400" height="275" frameborder="0" scrolling="yes"></iframe>
         </div>
-      </div>
-      <!-- faqs div -->
-      <div class="model-shield" id="faqModel">
+    </div>
+    <!-- photo model -->
+    <div class="model-shield" id="photoModel">
+        <div class="photo-model">
+            <div id="closePhotos"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+            <div class="photoTitle">Stella's Photos</div>
+            <iframe src="https://snapwidget.com/embed/334796" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1150px; height:550px"></iframe>
+        </div>
+    </div>
+    <!-- faqs div -->
+    <div class="model-shield" id="faqModel">
         <div class="faqs-model">
             <div id="closeFaqs"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
             <div class="faqTitle">F.A.Q.s About Stella's</div>
             <div id="faqs-content">
-              <ul>
-                <li><i class="fa fa-paw" aria-hidden="true"></i>
-                  - DOGS - we love dogs arf! arf! ARF! but only on
-                  the patio, sorry it's a state law</li>
-                <li><i class="fa fa-wifi" aria-hidden="true"></i>
-                  - We have free WiFi! It's a very nice one too</li>
-                <li><i class="fa fa-gift" aria-hidden="true"></i>
-                  - Yes, we sell gift certificates</li>
-                <li><i class="fa fa-play" aria-hidden="true"></i>
-                  <i class="fa fa-music" aria-hidden="true"></i> - If you would like to play music at stellas please send an email to <U><a class="link" href="mailto:stellascoffeehouse@gmail.com">Stella's Music Coordinator</a></U></li>
-                <li><i class="fa fa-paint-brush" aria-hidden="true"></i>
-                  - We have art for sale,
-                  for more info see Susan Bell's webite www.stuff.com</li>
-                <li><i class="fa fa-users" aria-hidden="true"></i>
-                  - We're a social environment.
-                  If you see someone sitting alone it's not uncommon to join them</li>
-                <li><i class="fa fa-train" aria-hidden="true"></i>
-                  - We are conviently located down the street from
-                the Alameda light rail station</li>
-                <li><i class="fa fa-coffee" aria-hidden="true"></i>
-                  - We proudly serve coffee roasted by Pablo's coffee</li>
-                <li><i class="fa fa-bicycle" aria-hidden="true"></i>
-                  - There is a large bike rack out front</li>
-                <li><i class="fa fa-fire" aria-hidden="true"></i>
-                  - We have fire pits on the patio for your enjoyment</li>
-                <li><i class="fa fa-heart" aria-hidden="true"></i>
-                  - We make some of our syrups from scratch, try the vanilla </li>
-                <li><i class="fa fa-heart" aria-hidden="true"></i>
-                  - We have creative baristas who invent new
-                  and uncommon drinks, ask about it while you're here</li>
-                <li><i class="fa fa-heart" aria-hidden="true"></i>
-                  - Our chocolate mix is a high quality special blend made by a
-                  local artizen</li>
-              </ul>
+                <ul>
+                    <li><i class="fa fa-paw" aria-hidden="true"></i> - DOGS - we love dogs arf! arf! ARF! but only on the patio, sorry it's a state law</li>
+                    <li><i class="fa fa-wifi" aria-hidden="true"></i> - We have free WiFi! It's a very nice one too</li>
+                    <li><i class="fa fa-gift" aria-hidden="true"></i> - Yes, we sell gift certificates</li>
+                    <li><i class="fa fa-play" aria-hidden="true"></i>
+                        <i class="fa fa-music" aria-hidden="true"></i> - If you would like to play music at stellas please send an email to
+                        <U><a class="link" href="mailto:stellascoffeehouse@gmail.com">Stella's Music Coordinator</a></U>
+                    </li>
+                    <li><i class="fa fa-paint-brush" aria-hidden="true"></i> - We have art for sale, for more info see Susan Bell's webite www.stuff.com</li>
+                    <li><i class="fa fa-users" aria-hidden="true"></i> - We're a social environment. If you see someone sitting alone it's not uncommon to join them</li>
+                    <li><i class="fa fa-train" aria-hidden="true"></i> - We are conviently located down the street from the Alameda light rail station</li>
+                    <li><i class="fa fa-coffee" aria-hidden="true"></i> - We proudly serve coffee roasted by Pablo's coffee</li>
+                    <li><i class="fa fa-bicycle" aria-hidden="true"></i> - There is a large bike rack out front</li>
+                    <li><i class="fa fa-fire" aria-hidden="true"></i> - We have fire pits on the patio for your enjoyment</li>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i> - We make some of our syrups from scratch, try the vanilla </li>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i> - We have creative baristas who invent new and uncommon drinks, ask about it while you're here</li>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i> - Our chocolate mix is a high quality special blend made by a local artizen</li>
+                </ul>
             </div>
         </div>
-      </div>
-  </body>
+    </div>
+</body>
+
 </html>
