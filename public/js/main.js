@@ -16,6 +16,10 @@ window.onload = function() {
     document.getElementById('contact').addEventListener("click", showContact);
     document.getElementById('closeContact').addEventListener("click", hideContact);
     document.getElementById('contactModel').addEventListener("click", hideContact);
+    document.getElementById('contact-content')
+        .addEventListener("click", function(e) {
+            e.stopPropagation();
+        });
 
     document.getElementById('events').addEventListener("click", showEvents);
     document.getElementById('closeCal').addEventListener("click", hideEvents);

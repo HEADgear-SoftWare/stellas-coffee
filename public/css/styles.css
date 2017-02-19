@@ -298,7 +298,8 @@ table {
   margin-top: 10vh;
   height: 75%;
   width: 50%;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   z-index: 31;
   background-color: #030407;
   border: ridge 3px #8C776D;
