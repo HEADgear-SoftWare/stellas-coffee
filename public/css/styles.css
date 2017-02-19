@@ -298,8 +298,7 @@ table {
   margin-top: 10vh;
   height: 75%;
   width: 50%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 31;
   background-color: #030407;
   border: ridge 3px #8C776D;
@@ -333,7 +332,8 @@ table {
     height: 85%;
     background-color: #832209;
     color: #DDD3A0;
-    font-family: Roboto; }
+    font-family: Roboto;
+    overflow-y: auto; }
     .contact-model #contact-content h3 {
       color: #BD8E74; }
 
@@ -345,7 +345,6 @@ table {
     margin-top: 10vh;
     height: 75%;
     width: 50%;
-    overflow: hidden;
     z-index: 31;
     background-color: #030407;
     border: ridge 3px #8C776D;
@@ -372,7 +371,7 @@ table {
   .contact-model {
     margin-left: 0;
     margin-top: 0;
-    height: 120%;
+    height: 100%;
     width: 100%;
     border-radius: 0;
     border: none; }

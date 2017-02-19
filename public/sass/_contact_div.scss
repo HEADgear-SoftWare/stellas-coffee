@@ -8,8 +8,7 @@
   margin-top: 10vh;
   height: 75%;
   width: 50%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 31;
   background-color: $blackish-color;
   border: ridge 3px $greyish-color;
@@ -48,6 +47,7 @@
     background-color: $espresso-red;
     color: $off-white-color;
     font-family: $paragraph-font;
+    overflow-y: auto;
     h3 {
       color: $brownish-color;
     }
@@ -65,7 +65,6 @@ and (orientation : landscape) {
     margin-top: 10vh;
     height: 75%;
     width: 50%;
-    overflow: hidden;
     z-index: 31;
     background-color: $blackish-color;
     border: ridge 3px $greyish-color;
@@ -100,7 +99,7 @@ and (orientation : landscape) {
   .contact-model {
     margin-left: 0;
     margin-top: 0;
-    height: 120%;
+    height: 100%;
     width: 100%;
     border-radius: 0;
     border: none;
