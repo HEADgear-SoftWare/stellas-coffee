@@ -10,8 +10,13 @@ window.onload = function() {
     document.getElementById('faqModel').addEventListener("click", hideFaqs);
     document.getElementById('faqs-content')
         .addEventListener("click", function(e) {
-            e.stopPropagation()
+            e.stopPropagation();
         });
+
+    document.getElementById('contact').addEventListener("click", showContact);
+    document.getElementById('closeContact').addEventListener("click", hideContact);
+    document.getElementById('contactModel').addEventListener("click", hideContact);
+
     document.getElementById('events').addEventListener("click", showEvents);
     document.getElementById('closeCal').addEventListener("click", hideEvents);
     document.getElementById('calModel').addEventListener("click", hideEvents);
@@ -27,8 +32,8 @@ window.onload = function() {
         setTimeout(function() {
             video.play();
         }, 300);
-    }
-}
+    };
+};
 
 // page scripts +===}========>
 
@@ -94,6 +99,18 @@ function showFaqs() {
 function hideFaqs() {
     var faq = document.getElementById('faqModel');
     faq.className = "model-shield hide";
+    showInfo();
+}
+
+function showContact() {
+    var contact = document.getElementById('contactModel');
+    contact.className = "model-shield show";
+    hideInfo();
+}
+
+function hideContact() {
+    var contact = document.getElementById('contactModel');
+    contact.className = "model-shield hide";
     showInfo();
 }
 
