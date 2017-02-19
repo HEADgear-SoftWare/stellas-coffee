@@ -8,7 +8,8 @@
   margin-top: 10vh;
   height: 75%;
   width: 50%;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   z-index: 31;
   background-color: $blackish-color;
   border: ridge 3px $greyish-color;
