@@ -294,15 +294,16 @@ table {
 .contact-model {
   display: inline-block;
   position: relative;
-  margin-left: 25%;
+  margin-left: 30%;
   margin-top: 10vh;
-  height: 75%;
-  width: 50%;
+  height: 70%;
+  width: 40%;
   overflow: hidden;
   z-index: 31;
   background-color: #030407;
   border: ridge 3px #8C776D;
-  border-radius: 30px; }
+  border-radius: 30px;
+  padding-right: 1em; }
   .contact-model #closeContact {
     display: inline-block;
     position: relative;
@@ -334,8 +335,27 @@ table {
     color: #DDD3A0;
     font-family: Roboto;
     overflow-y: auto; }
+    .contact-model #contact-content h2 {
+      font-size: 2em; }
     .contact-model #contact-content h3 {
-      color: #BD8E74; }
+      font-size: 2em; }
+    .contact-model #contact-content i {
+      color: #DDD3A0; }
+    .contact-model #contact-content .show-art {
+      margin-bottom: 8%; }
+    .contact-model #contact-content .contact-link {
+      text-decoration: underline; }
+    .contact-model #contact-content .contact-link:hover {
+      color: #8a5b41; }
+    .contact-model #contact-content .top-contact-div {
+      height: 40%; }
+      .contact-model #contact-content .top-contact-div .left-contact-div {
+        float: left;
+        width: 50%;
+        padding-top: 2%; }
+      .contact-model #contact-content .top-contact-div .right-contact-div {
+        float: left;
+        width: 50%; }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .contact-model {
@@ -378,8 +398,9 @@ table {
     .contact-model h2 {
       font-size: 6vh; }
     .contact-model h3 {
-      color: #BD8E74;
       font-size: 4vh; }
+    .contact-model p {
+      font-size: 3vh; }
     .contact-model #closeContact {
       float: left;
       margin-left: 5%;
@@ -389,7 +410,11 @@ table {
       font-size: 2em;
       margin-right: 15%;
       margin-left: 22%;
-      margin-top: 3%; } }
+      margin-top: 3%; }
+    .contact-model .left-contact-div {
+      width: 100% !important; }
+    .contact-model .right-contact-div {
+      width: 100% !important; } }
 .model-shield {
   display: absolute;
   position: fixed;

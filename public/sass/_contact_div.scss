@@ -4,15 +4,16 @@
 .contact-model {
   display: inline-block;
   position: relative;
-  margin-left: 25%;
+  margin-left: 30%;
   margin-top: 10vh;
-  height: 75%;
-  width: 50%;
+  height: 70%;
+  width: 40%;
   overflow: hidden;
   z-index: 31;
   background-color: $blackish-color;
   border: ridge 3px $greyish-color;
   border-radius: 30px;
+  padding-right: 1em;
   #closeContact {
     display: inline-block;
     position: relative;
@@ -48,8 +49,36 @@
     color: $off-white-color;
     font-family: $paragraph-font;
     overflow-y: auto;
+    h2 {
+      font-size: 2em;
+    }
     h3 {
-      color: $brownish-color;
+      font-size: 2em;
+    }
+    i {
+      color: $off-white-color;
+    }
+    .show-art {
+      margin-bottom: 8%;
+    }
+    .contact-link {
+      text-decoration: underline;
+    }
+    .contact-link:hover {
+      color: darken($brownish-color, 20%);
+    }
+    .top-contact-div {
+      height: 40%;
+
+      .left-contact-div {
+        float: left;
+        width: 50%;
+        padding-top: 2%;
+      }
+      .right-contact-div{
+        float: left;
+        width: 50%;
+      }
     }
   }
 }
@@ -107,8 +136,10 @@ and (orientation : landscape) {
       font-size: 6vh;
     }
     h3 {
-      color: $brownish-color;
       font-size: 4vh;
+    }
+    p {
+      font-size: 3vh;
     }
     #closeContact {
       float: left;
@@ -121,6 +152,12 @@ and (orientation : landscape) {
       margin-right: 15%;
       margin-left: 22%;
       margin-top: 3%;
+    }
+    .left-contact-div {
+      width: 100% !important;
+    }
+    .right-contact-div {
+      width: 100% !important;
     }
   }
 }
