@@ -1,7 +1,7 @@
 window.onload = function() {
     var screenWidth = document.documentElement.clientWidth;
     if (screenWidth > 750) {
-        var video = '<video media="screen and (min-width: 750px)" preload="preload" id="video" loop="loop"><source src="assets/Videos/couple-drinking-coffee.mp4" type="video/mp4"></source></video>';
+        var video = '<video media="screen and (min-width: 750px)" preload="preload" id="video" loop="loop"><source src="assets/Videos/coffee-background.mp4" type="video/mp4"></source></video>';
         document.body.innerHTML += video;
     }
 
