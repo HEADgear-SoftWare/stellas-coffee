@@ -234,6 +234,7 @@ a {
   margin-top: 20vh;
 }
 .logo {
+  overflow: hidden;
   position: absolute;
   margin-top: -52vh;
   height: 150px;
@@ -241,14 +242,15 @@ a {
   border-radius: 50%;
   margin-left: $left-indent-large;
   padding-top: $padding-top-large;
-  background-color: $white-color;
-  border: 10px solid #323232;
+  background-color: #faf4f3;
   z-index: 11;
+  border: 5px ridge #3e363a;
+    // colors taken from logo: red #8b2b2f gray #3e363a
   img {
-    margin-top: 8px;
-    margin-left: 66px;
-    height: 125px;
-    width: 168px;
+    margin-left: -1%;
+    margin-top: -4%;
+    height: 100%;
+    width: 100%;
   }
 }
 @media screen and (max-device-width: 750px) {
@@ -257,12 +259,6 @@ a {
     width: 65vw;
     margin-left: 12vw;
     margin-top: 40%;
-    img {
-      margin-top: 5vw;
-      margin-left: 15vw;
-      height: 25vw;
-      width: 35vw;
-    }
   }
 }
 
