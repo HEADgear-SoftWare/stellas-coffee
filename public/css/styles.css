@@ -172,7 +172,7 @@ table {
     border: none; }
     .photo-model .photoTitle {
       float: left;
-      font-size: 2em;
+      font-size: 1.5em;
       margin-left: 22vw;
       margin-right: 10vw;
       margin-top: 3%; }
@@ -336,9 +336,9 @@ table {
     font-family: Roboto;
     overflow-y: auto; }
     .contact-model #contact-content h2 {
-      font-size: 2em; }
+      font-size: 1.5em; }
     .contact-model #contact-content h3 {
-      font-size: 2em; }
+      font-size: 1.5em; }
     .contact-model #contact-content i {
       color: #ddd3a0; }
     .contact-model #contact-content .show-art {
